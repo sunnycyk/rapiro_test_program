@@ -21,18 +21,32 @@ void setup() {
   // put your setup code here, to run once:
   Serial.begin(57600);
   delay(500);
+  
+  // Move Forward for 5 seconds
   Serial.println("#M1");
   delay(5000);
+  
+  // Move Backward for 5 seconds
   Serial.println("#M2");
   delay(5000);
+  
+  // stop and initial position
   Serial.println("#M0");
   delay(500);
+  
+  // Wave right arm for 3 seconds
   Serial.println("#M6");
   delay(3000);
+  
+  // wave left arm for 3 seconds
   Serial.println("#M8");
   delay(3000);
+  
+  // wave both arms for 3 seconds
   Serial.println("#M5");
   delay(3000);
+  
+  // stop and back to initial position
   Serial.println("#M0");
 }
 
